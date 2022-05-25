@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="card">
+
+            <ul>
+                <h2><b>Перелік основних команд:</b></h2>
+
+                <li><b>git config --global user.name blabla / git config --global user.email blabal@bla</b> - With Git,
+                    there are many configurations and settings possible. git config is how to assign these settings. Two
+                    important settings are user user.name and user.email. These values set what email address and name
+                    commits will be from on a local computer. With git config, a --global flag is used to write the
+                    settings
+                    to all repositories on a computer. Without a --global flag settings will only apply to the current
+                    repository that you are currently in.</li>
+                <li><b>git init</b> - this command turns a directory into an empty Git repository. This is the first
+                    step in
+                    creating a repository. After running git init, adding and committing files/directories is possible.
+                </li>
+                <li><b>git status</b> - this command returns the current state of the repository.
+                    git status will return the current working branch. If a file is in the staging area, but not
+                    committed,
+                    it shows with git status. Or, if there are no changes it'll return nothing to commit, working
+                    directory
+                    clean.</li>
+                <li> <b>git add</b> - adds files in the to the staging area for Git. Before a file is available to
+                    commit to
+                    a repository, the file needs to be added to the Git index (staging area). There are a few different
+                    ways
+                    to use git add, by adding entire directories, specific files, or all unstaged files. </li>
+                <li><b>git commit</b> - record the changes made to the files to a local repository. For easy reference,
+                    each
+                    commit has a unique ID.</li>
+                <li><b>git log</b> - to show the chronological commit history for a repository. This helps give context
+                    and
+                    history for a repository. git log is available immediately on a recently cloned repository to see
+                    history. </li>
+                <li><b>git checkout </b>- to start working in a different branch, use git checkout to switch branches.
+                </li>
+                <li><b>git branch</b> - to determine what branch the local repository is on, add a new branch, or delete
+                    a
+                    branch.</li>
+                <li><b>git push</b> - sends local commits to the remote repository. git push requires two parameters:
+                    the
+                    remote repository and the branch that the push is for.</li>
+                <li><b>git pull </b>- to get the latest version of a repository run git pull. This pulls the changes
+                    from
+                    the remote repository to the local computer.</li>
+                <li> <b>git merge</b> - integrate branches together. git merge combines the changes from one branch to
+                    another branch. For example, merge the changes made in a staging branch into the stable branch.</li>
+                <li><b>git clone</b> - to create a local working copy of an existing remote repository, use git clone to
+                    copy and download the repository to a computer. Cloning is the equivalent of git init when working
+                    with
+                    a remote repository. Git will create a directory locally with all files and repository history.</li>
+                <br>
+                <br>
+                <i><b>Gitignore file</b> tells Git which files to ignore when committing your project to the GitHub
+                    repository. gitignore is located in the root directory of your repo. The .gitignore file itself is a
+                    plain text document.</i>
+
+
+            </ul>
+
+
+        </div>
+
+        <div class="card2">
+
+
+            <ul>
+
+                <h2><b>Advanced:</b></h2>
+
+                <li><b>git revert</b> - you use git revert to record some new commits to reverse the effect of some
+                    earlier
+                    commits (possibly faulty ones). It is an “undo” command, but technically it is much more than that.
+                    Git
+                    revert does not delete any commit in this project history.</li>
+                <li><b>git reset </b> - git reset is a powerful command that is used to undo local changes to the state
+                    of a
+                    Git repo. Git reset operates on "The Three Trees of Git". These trees are the Commit History ( HEAD
+                    ),
+                    the Staging Index, and the Working Directory.</li>
+                <li><b>git rebase</b> - rebasing is the process of moving or combining a sequence of commits to a new
+                    base
+                    commit. Rebasing is most useful and easily visualized in the context of a feature branching
+                    workflow.
+                </li>
+                <li><b>git cherry-pick</b> - powerful command that enables arbitrary Git commits to be picked by
+                    reference
+                    and appended to the current working HEAD. Cherry picking is the act of picking a commit from a
+                    branch
+                    and applying it to another. git cherry-pick can be useful for undoing changes.</li>
+                <li><b>git stash</b> - to save changes made when they're not in a state to commit them to a repository.
+                    This
+                    will store the work and give a clean working directory. For instance, when working on a new feature
+                    that's not complete, but an urgent bug needs attention.</li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+
+</html>
